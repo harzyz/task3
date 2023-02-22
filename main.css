@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+.main-header {
+    display: flex;
+    width: 95%;
+    margin: 10px auto;
+}
+.menu-logo {
+    display: none;
+}
+.main-nav {
+    display: flex;
+    width: calc(95% - 84px);
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.main-nav_item {
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+}
+.main-nav_right {
+    margin: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+.main-nav_right button {
+    margin: 0 15px;
+    background: white;
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.main-nav_right button:focus{
+    outline: 0;
+}
+.main-section {
+    width: 80%;
+    height: 528px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+}
+.left-section {
+    width: 45%;
+    height: 500px;
+    padding: 0 10px;
+}
+.left-section2 {
+    display: none;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+p {
+    font-size: 16px;
+    color: hsl(0, 0%, 41%);
+}
+.left-section button {
+    background: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 50px 0;
+    border: 0;
+    cursor: pointer;
+}
+.left-section button:focus {
+    outline: 0;
+}
+.right-section {
+    width: 45%;
+    height: 528px;
+}
+.bottom_left-section {
+    display: flex;
+    justify-content: space-between;
+}
+.right-section img {
+    width: 100%;
+    height: 528px;
+}
+.databiz {
+    width: 90px;
+    height: 15px;
+}
+.audiophile {
+    width: 70px;
+    height: 30px;
+}
+.meet {
+    width: 80px;
+    height: 18px;
+}
+.maker {
+    width: 75px;
+    height: 18px;
+}
+@media screen and (max-width:700px) {
+    .menu-logo {
+        display: inline-block;
+    }
+    .main-nav {
+        display: none;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-section {
+        flex-direction: column-reverse;
+        width: 99%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .right-section {
+        width: 99%;
+        height: 100%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right-section img {
+        width: 99%;
+        height: 300px;
+    }
+    .left-section{
+        width: 95%;
+        height: 100%;
+    }
+    .left-section1 {
+        display: none;
+    }
+    .left-section2 {
+        display: block;
+    }
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .left-section button {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .bottom_left-section {
+        width: 99%;
+        margin: 30px auto;
+    }
+    .btn {
+        text-align: center;
+    }
+}
